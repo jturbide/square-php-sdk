@@ -135,7 +135,7 @@ $apiResponse = $locationsApi->listLocations();
 
 if ($apiResponse->isSuccess()) {
     $listLocationsResponse = $apiResponse->getResult();
-    $locationsList = $listLocationsResponse->getLocations()
+    $locationsList = $listLocationsResponse->getLocations();
     foreach ($locationsList as $location) {
        print_r($location);
     }
